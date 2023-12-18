@@ -47,7 +47,12 @@
         <!-- Keep me signed in -->
         <div class="mt-3">
           <label class="text-[15px]" for="keepme">Keep me sigined in</label>
-          <input class="ms-2" type="checkbox" id="keepme"  formControlName="keepme"/>
+          <input
+            class="ms-2"
+            type="checkbox"
+            id="keepme"
+            formControlName="keepme"
+          />
         </div>
 
         <div class="mt-3">
@@ -59,6 +64,17 @@
           </button>
         </div>
       </form>
+
+      <div class="text-center mt-2">
+        <p>
+          Already have an account?<span
+            class="cursor-pointer font-medium text-blue-700"
+            routerLink="/signup"
+          >
+            <a> register here </a></span
+          >
+        </p>
+      </div>
     </div>
     <div class="footer">
       <div class="text-center mt-5">
