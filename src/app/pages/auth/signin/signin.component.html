@@ -5,7 +5,12 @@
     class="min-w-[20%] md:w-[500px] h-[600px] bg-white rounded-[15px] shadow-xl flex-col justify-center items-center p-5 md:p-10"
   >
     <div class="head text-center">
-      <h1 class="font-bold text-[25px] md:text-[30px]">EXPENSE TRACKER</h1>
+      <h1
+        routerLink="/"
+        class="font-bold text-[25px] md:text-[30px] cursor-pointer"
+      >
+        EXPENSE TRACKER
+      </h1>
     </div>
     <div
       class="forms mt-5"
@@ -59,6 +64,7 @@
           <button
             class="w-full bg-blue-700 rounded-md p-[10px] md:p-[15px] text-[17px] text-white font-medium"
             type="submit"
+            [disabled]="signinForm.invalid"
           >
             Login
           </button>

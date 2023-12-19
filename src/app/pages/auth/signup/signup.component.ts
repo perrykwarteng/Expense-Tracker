@@ -24,12 +24,10 @@ export class SignupComponent {
     });
   }
 
-  signinfunction() {
+  signupfunction() {
     if (this.signUpForm.valid) {
       console.log(this.signUpForm.value);
       this.signUpForm.reset();
-    } else {
-      console.error('sorry');
     }
   }
 }
