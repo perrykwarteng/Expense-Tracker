@@ -1,0 +1,10 @@
+.asidebar {
+  transition: all 0.4s ease;
+}
+.open {
+  display: block;
+}
+.close {
+  position: relative;
+  left: 0px;
+}
