@@ -15,19 +15,19 @@ import { RouterLink } from '@angular/router';
   styleUrl: './signin.component.css',
 })
 export class SigninComponent {
-  signinForm!: FormGroup;
+  signInForm!: FormGroup;
   constructor(private _fb: FormBuilder) {
-    this.signinForm = this._fb.group({
-      email: [, [Validators.email, Validators.required]],
-      password: [, [Validators.required, Validators.minLength(5)]],
-      keepme: [, []],
+    this.signInForm = this._fb.group({
+      email: [ [Validators.email, Validators.required]],
+      password: [[Validators.required, Validators.minLength(5)]],
+      keepMe: [ []],
     });
   }
 
-  signinfunction() {
-    if (this.signinForm.valid) {
-      console.log(this.signinForm.value);
-      this.signinForm.reset();
+  signInFunction() {
+    if (this.signInForm.valid) {
+      console.log(this.signInForm.value);
+      this.signInForm.reset();
     } else {
       console.error('sorry');
     }
