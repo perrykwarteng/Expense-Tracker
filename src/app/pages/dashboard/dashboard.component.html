@@ -1,1 +1,12 @@
-<app-sidebar></app-sidebar>
+<section class="w-screen">
+  <app-sidebar (toggle)="onToggle()"></app-sidebar>
+  <main
+    [class.open]="isOpen"
+    [class.close]="isClose"
+    class="w-full h-full bg-red-900"
+  >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sint ut,
+    fugiat aliquam quas id et maxime, placeat dicta cupiditate eveniet dolorum
+    obcaecati quidem quibusdam itaque totam vitae earum dolor.
+  </main>
+</section>

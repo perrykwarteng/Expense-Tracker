@@ -1,0 +1,14 @@
+.main-content-with-sidebar {
+  margin-left: 200px; /* Adjust based on your sidebar width */
+  transition: margin-left 0.3s ease; /* Add transition for a smooth effect */
+}
+.asidebar {
+  transition: all 0.4s ease;
+}
+.open {
+  display: block;
+}
+.close {
+  /* position: relative; */
+  left: 40px;
+}

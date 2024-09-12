@@ -8,4 +8,13 @@ import { SidebarComponent } from '../../shared/reusableComponent/sidebar/sidebar
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css',
 })
-export class DashboardComponent {}
+export class DashboardComponent {
+  isOpen: boolean = true;
+  isClose: boolean = true;
+
+  onToggle() {
+    this.isOpen = !this.isOpen;
+    this.isClose = !this.isClose;
+    console.log('yuio');
+  }
+}
